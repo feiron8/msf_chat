@@ -1,0 +1,36 @@
+#Пользователи
+POST /users/ Добавить нового пользователя
+GET /users/{id} Получить пользователя по идентификатору
+PUT /users/{id} Обновить данные пользователя с соответствующим идентификатором
+DELETE /users/{id} Удалить пользователя с соответствующим идентификатором
+GET /users?username=username&offset=10&limit=10 Поиск по имени пользователя
+GET /users/{id}/chats Получить чаты, в которых состоит пользователь
+GET /users/{id}/projects Получить проекты, в которых состоит пользователь
+
+#Чаты
+POST /chats Добавить чат
+GET /chats/{id} Получить чат с соответствующим идентификатором
+GET /chats/{id}/users Получить пользователей состоящих в чате
+POST /chats/{id}/users Добавить пользователя в чат
+DELETE /chats/{id}/users/{id} Пользователя из чата
+GET /chats/{id}/messages Получить список сообщений в чате
+GET /chats/{id}/messages?offset=10&limit=10 Параметры для подгрузки сообщений
+POST /chats/{id}/messages Добавить сообщение
+PUT /chats/{id}/messages/{id} Изменить существующее сообщение (если оно последнее)
+DELETE /chats/{id}/messages/{id} Удалить сообщение (если оно последнее)
+
+#Проекты
+POST /projects Добавить проект
+GET /projects/{id} Получить проект с соответствующим идентификатором
+PUT /projects/{id} Изменить проект
+DELETE /projects/{id} Удалить проект
+GET /projects/{id}/users Получить пользователей состоящих в проекте
+POST /projects/{id}/users Добавить пользователя в проект
+DELETE /projects/{id}/users/{id} Удалить пользователя из проекта
+GET /projects/{id}/milestones Получить вехи, в которых был проект
+POST /projects/{id}/milestones Добавить веху в проект (перейти в следующую)
+PUT /projects/{id}/milestones/{id} Изменить веху проекта
+GET /projects/{id}/milestones/{id}/attachments Получить приложения к вехе
+POST /projects/{id}/milestones/{id}/attachments Добавить приложение к вехе
+PUT /projects/{id}/milestones/{id}/attachments/{id} Изменить приложения к вехе
+DELETE /projects/{id}/milestones/{id}/attachments/{id}
