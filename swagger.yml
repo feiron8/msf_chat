@@ -1,0 +1,69 @@
+consumes:
+- application/io.goswagger.examples.msf-chat.v1-json
+definitions:
+        error:
+                type: object
+                required:
+                        - message
+                properties:
+                        code:
+                                type: integer
+                                format: int64
+                        message:
+                                type: string
+        user:
+                type: object
+                required:
+                        - username
+                properties:
+                        id:
+                                type: integer
+                                format: int64
+                                readOnly: true
+                        username:
+                                type: string
+                                minLength: 1
+                        name:
+                                type: string
+                                minLength: 1
+                        surname:
+                                type: string
+                                minLength: 1
+                        status:
+                                type: string
+                                minLength: 0
+info:
+  description: MSF chat web service project
+  title: MSF chat
+  version: 1.0.0
+paths:
+        /users/:
+                get:
+                        tags:
+                                - users
+                        parameters:
+                                - name: since
+                                  in: query
+                                  type: integer
+                                  format: int64
+                                - name: limit
+                                  in: query
+                                  type: integer
+                                  format: int32
+                                  default: 20
+                        responses:
+                                200:
+                                        description: list of users
+                                        schema:
+                                                type: array
+                                                items:
+                                                        $ref: "#/definitions/user"
+                                default:
+                                        description: generic error response
+                                        schema:
+                                                $ref: "#/definitions/error"
+produces:
+- application/io.goswagger.examples.msf-chat.v1-json
+schemes:
+- http
+swagger: "2.0"
