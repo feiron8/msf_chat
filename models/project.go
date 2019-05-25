@@ -1,8 +1,9 @@
 package models
 
 type Project struct {
-	Id int
+	Id string
 	Title string
 	Description string
-	CurrentMilestoneId int
+	CurrentMilestoneId string
+	Users map[string]string
 }

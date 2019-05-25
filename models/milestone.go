@@ -1,9 +1,10 @@
 package models
 
 type Milestone struct {
-	Id int
+	Id string
 	Description string
 	Iteration int
-	MilestoneTypeId int
-	ProjectId int
+	MilestoneType string
+	ProjectId string
+	Attachments []string
 }

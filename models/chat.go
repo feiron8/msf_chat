@@ -1,8 +1,7 @@
 package models
 
 type Chat struct {
-	Id int
+	Id string
 	Title string
-	InProject bool
-	ProjectId int
+	Users []string
 }

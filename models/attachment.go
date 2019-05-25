@@ -1,11 +1,11 @@
 package models
 
 type Attachment struct {
-	Id int
+	Id string
 	Title string
 	Description string
 	Time int
 	FileName string
 	Link string
-	AttachmentTypeId int
+	Type string
 }

@@ -1,10 +1,10 @@
 package models
 
 type Message struct {
-	Id int
+	Id string
 	Text string
 	Time int
-	UserId int
-	ChatId int
-	AttachmentId int
+	AuthorId int
+	ChatId string
+	Attachments []string
 }
