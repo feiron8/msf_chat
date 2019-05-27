@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	models.InitDB("postgres://postgres:coFFee42@localhost/msf_chat?sslmode=disable")
+	models.InitDB("mongodb://127.0.0.1:27017")
 	r := mux.NewRouter()
 
 	r.HandleFunc("/users", controllers.SearchUsers).Methods("GET")

@@ -1,7 +1,9 @@
 package models
 
 import (
-	"fmt"
+	"context"
+	"go.mongodb.org/mongo-driver/mongo/options"
+	"log"
 )
 
 type User struct {
@@ -13,23 +15,31 @@ type User struct {
 	Status string
 }
 
-func GetUsers() []User {
-	rows, err := db.Query("select * from users")
+func GetUsers() []*User {
+	collection := client.Database("msfChat").Collection("users")
+	var results []*User
+
+	cur, err := collection.Find(context.TODO(), nil, options.Find())
 	if err != nil {
-		panic(err)
+		log.Fatal(err)
 	}
-	defer rows.Close()
 
-	users := []User{}
-	for rows.Next() {
-		user := User{}
-		err := rows.Scan(&user.Id, &user.Username, &user.Password, &user.Name, &user.Surname, &user.Status)
+	for cur.Next(context.TODO()) {
+		var elem User
+
+		err := cur.Decode(&elem)
 		if err != nil {
-			fmt.Println(err)
-			continue
+			log.Fatal(err)
 		}
-		users = append(users, user)
+
+		results = append(results, &elem)
 	}
 
-	return users
+	if err := cur.Err(); err != nil {
+		log.Fatal(err)
+	}
+
+	cur.Close(context.TODO())
+
+	return results
 }

@@ -1,21 +1,33 @@
 package models
 
 import (
+	"context"
 	"database/sql"
-	_ "github.com/lib/pq"
 	"log"
+	"fmt"
+	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/mongo"
+	"go.mongodb.org/mongo-driver/mongo/options"
+	"go.mongodb.org/mongo-driver/mongo/readpref"
 )
 
-var db *sql.DB
+var client *mongo.Client
 
 func InitDB(dataSourceName string) {
 	var err error
-	db, err = sql.Open("postgres", dataSourceName)
+
+	client, err = mongo.NewClient(options.Client().ApplyURI(dataSourceName))
 	if err != nil {
-		log.Panic(err)
+		log.Fatal(err)
 	}
 
-	if err = db.Ping(); err != nil {
-		log.Panic(err)
+	err = client.Connect(context.TODO())
+	if err != nil {
+		log.Fatal(err)
+	}
+
+	err = client.Ping(context.TODO(), nil)
+	if err != nil {
+		log.Fatal(err)
 	}
 }
