@@ -2,6 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Message from './Message'
 import InputLine from "./InputLine";
+import {connect} from 'react-redux';
 
 class MessageList extends React.Component {
   static propTypes = {
@@ -24,4 +25,8 @@ class MessageList extends React.Component {
   }
 }
 
-export default MessageList
+const mapStateToProps = (storeState) => ({
+  messages: storeState.messages
+});
+
+export default connect(mapStateToProps)(MessageList)
