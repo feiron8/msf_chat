@@ -1,15 +1,13 @@
 import React from 'react'
+import {connect} from 'react-redux';
 import TextField from '@material-ui/core/TextField';
 import Button from '@material-ui/core/Button';
+import {sendMessageAction} from '../ac';
 
 class InputLine extends React.Component {
-  constructor(...args) {
-    super(...args);
-
-    this.state = {
-      text: ''
-    }
-  }
+  state = {
+    text: ''
+  };
 
   render() {
     return (
@@ -35,8 +33,12 @@ class InputLine extends React.Component {
   };
 
   handleClick = event => {
-    console.log('click');
+    this.props.sendMessageAction(this.state.text);
   }
 }
 
-export default InputLine
+const mapDispatchToProps = {
+  sendMessageAction
+};
+
+export default connect(null, mapDispatchToProps)(InputLine)

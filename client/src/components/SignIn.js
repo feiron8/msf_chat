@@ -1,29 +1,59 @@
 import React from 'react';
+import './SignIn.css';
 import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
 import TextField from '@material-ui/core/TextField';
+import { withStyles, createMuiTheme } from '@material-ui/core/styles';
+import { fade } from '@material-ui/core/styles/colorManipulator';
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
-import Grid from '@material-ui/core/Grid';
+import Paper from '@material-ui/core/Paper';
 import Box from '@material-ui/core/Box';
+import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
+import InputBase from '@material-ui/core/InputBase';
+import InputLabel from '@material-ui/core/InputLabel';
+import FormControl from '@material-ui/core/FormControl';
 import { makeStyles } from '@material-ui/core/styles';
-import Container from '@material-ui/core/Container';
 
-const useStyles = makeStyles(theme => ({
-    '@global': {
-        body: {
-            backgroundColor: theme.palette.common.white,
+const BootstrapInput = withStyles(theme => ({
+    root: {
+        'label + &': {
+            marginTop: theme.spacing(3),
         },
     },
-    paper: {
-        marginTop: theme.spacing(8),
-        display: 'flex',
-        flexDirection: 'column',
-        alignItems: 'center',
+    input: {
+        borderRadius: 4,
+        position: 'relative',
+        backgroundColor: theme.palette.common.white,
+        border: '1px solid #ced4da',
+        fontSize: 16,
+        width: 'auto',
+        padding: '10px 12px',
+        transition: theme.transitions.create(['border-color', 'box-shadow']),
+        // Use the system font instead of the default Roboto font.
+        fontFamily: [
+            '-apple-system',
+            'BlinkMacSystemFont',
+            '"Segoe UI"',
+            'Roboto',
+            '"Helvetica Neue"',
+            'Arial',
+            'sans-serif',
+            '"Apple Color Emoji"',
+            '"Segoe UI Emoji"',
+            '"Segoe UI Symbol"',
+        ].join(','),
+        '&:focus': {
+            boxShadow: `${fade(theme.palette.primary.main, 0.25)} 0 0 0 0.2rem`,
+            borderColor: theme.palette.primary.main,
+        },
     },
+}))(InputBase);
+
+const useStyles = makeStyles(theme => ({
     avatar: {
         margin: theme.spacing(1),
         backgroundColor: theme.palette.secondary.main,
@@ -41,59 +71,56 @@ export default function SignIn() {
     const classes = useStyles();
 
     return (
-        <Container component="main" maxWidth="xs">
+        <Grid container component="main" className="signin">
             <CssBaseline />
-            <div className={classes.paper}>
-                <Typography component="h1" variant="h4">
-                    MSF-чат
-                </Typography>
-                <Typography component="h1" variant="h5">
-                    Войти
-                </Typography>
-                <form className={classes.form} noValidate>
-                    <TextField
-                        variant="filled"
-                        margin="normal"
-                        required
-                        fullWidth
-                        id="email"
-                        label="Email"
-                        name="email"
-                        autoFocus
-                    />
-                    <TextField
-                        variant="filled"
-                        margin="normal"
-                        required
-                        fullWidth
-                        name="password"
-                        label="Пароль"
-                        type="password"
-                        id="password"
-                    />
-                    <Button
+            <Grid item xs={false} sm={4} md={7} className="signin__image">
+                  <img src="/images/msf.png" alt="MSF" className="signin__msf"/>
+            </Grid>
+            <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square className="signin__side">
+                <div className="signin__side-container">
+                    <Typography component="h1" variant="h3" className="signin__header">
+                        MSF-чат
+                    </Typography>
+                    <Typography component="h1" variant="h5" className="signin__header">
+                        Авторизация
+                    </Typography>
+                    <form className={classes.form} noValidate className="signin__form">
+                        <FormControl className="signin__control">
+                            <InputLabel shrink htmlFor="bootstrap-control" className="signin__input-label">
+                                Логин
+                            </InputLabel>
+                            <BootstrapInput id="bootstrap-input" className="signin__input" />
+                        </FormControl>
+                        <FormControl className="signin__control">
+                            <InputLabel shrink htmlFor="bootstrap-input" className="signin__input-label">
+                                Пароль
+                            </InputLabel>
+                            <BootstrapInput id="bootstrap-input" className="signin__input" />
+                        </FormControl>
+                        <Button
                         type="submit"
                         fullWidth
                         variant="contained"
                         color="primary"
                         className={classes.submit}
-                    >
-                        Войти
-                    </Button>
-                    <Grid container>
-                        <Grid item xs>
-                            <Link href="#" variant="body2">
-                                Забыли пароль?
-                            </Link>
+                        >
+                            Войти
+                        </Button>
+                        <Grid container>
+                            <Grid item xs>
+                                <Link href="/recover" variant="body2">
+                                    Забыли пароль?
+                                </Link>
+                            </Grid>
+                            <Grid item>
+                                <Link href="/signup" variant="body2">
+                                    {"Зарегистрироваться"}
+                                </Link>
+                            </Grid>
                         </Grid>
-                        <Grid item>
-                            <Link href="/signup" variant="body2">
-                                {"Зарегистрироваться"}
-                            </Link>
-                        </Grid>
-                    </Grid>
-                </form>
-            </div>
-        </Container>
+                    </form>
+                </div>
+            </Grid>
+        </Grid>
     );
 }

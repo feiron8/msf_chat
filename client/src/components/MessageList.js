@@ -6,7 +6,7 @@ import {connect} from 'react-redux';
 
 class MessageList extends React.Component {
   static propTypes = {
-    messages: PropTypes.array()
+    messages: PropTypes.array
   };
 
   render() {
@@ -15,7 +15,7 @@ class MessageList extends React.Component {
     });
 
     return (
-      <div>
+      <div className="message-list">
         <ul>
           {messages}
         </ul>

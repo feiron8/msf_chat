@@ -1,6 +1,8 @@
-import {combineReducers} from 'redux'
-import messagesReducer from 'messages'
+import {combineReducers} from 'redux';
+import messagesReducer from './messages';
+import contactsReducer from './contacts';
 
 export default combineReducers({
-  messages: messagesReducer
+  messages: messagesReducer,
+  contacts: contactsReducer
 })
