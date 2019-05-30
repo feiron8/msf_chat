@@ -12,12 +12,48 @@ import Button from '@material-ui/core/Button';
 import List from '@material-ui/core/List';
 import Divider from '@material-ui/core/Divider';
 import ListItem from '@material-ui/core/ListItem';
-import ListItemIcon from '@material-ui/core/ListItemIcon';
 import ListItemText from '@material-ui/core/ListItemText';
+import { makeStyles, useTheme } from '@material-ui/core/styles';
+import AppBar from '@material-ui/core/AppBar';
+import Tabs from '@material-ui/core/Tabs';
+import Tab from '@material-ui/core/Tab';
+import green from '@material-ui/core/colors/green';
+
+const useStyles = makeStyles(theme => ({
+  root: {
+    backgroundColor: theme.palette.background.paper,
+    width: 500,
+    position: 'relative',
+    minHeight: 200,
+  },
+  fab: {
+    position: 'absolute',
+    bottom: theme.spacing(2),
+    right: theme.spacing(2),
+  },
+  fabGreen: {
+    color: theme.palette.common.white,
+    backgroundColor: green[500],
+    '&:hover': {
+      backgroundColor: green[600],
+    },
+  },
+}));
+
+function TabContainer(props) {
+  const { children, dir } = props;
+
+  return (
+    <Typography component="div" dir={dir} style={{ padding: 8 * 3 }}>
+      {children}
+    </Typography>
+  );
+}
 
 class App extends React.Component {
   state = {
-    left: false
+    left: false,
+    tabs: 0
   };
 
   render() {
@@ -26,8 +62,8 @@ class App extends React.Component {
         <Container maxWidth="lg" class="App__container">
           <Grid container component="main" className="App__main">
             <CssBaseline />
-            <Grid item xs={12} sm={8} md={4} component={Paper} elevation={6} square>
-              <div className="signin__side-container">
+            <Grid item xs={12} sm={8} md={3} component={Paper} elevation={6} square>
+              <div className="App__side">
                 <Button onClick={this.toggleDrawer('left', true)}>Меню</Button>
                 <Drawer open={this.state.left} onClose={this.toggleDrawer('left', false)}>
                   {this.sideList('left')}
@@ -38,13 +74,42 @@ class App extends React.Component {
                 <ContactsList/>
               </div>
             </Grid>
-            <Grid item xs={false} sm={4} md={8} className="App__message-list">
-              <Chat/>
+            <Grid item xs={false} sm={4} md={9} className="App__project">
+              <AppBar position="static" color="default">
+                <Tabs
+                  value={this.state.tabs}
+                  onChange={this.handleChangeTabs}
+                  indicatorColor="primary"
+                  textColor="primary"
+                  variant="fullWidth"
+                >
+                  <Tab label="Чат" />
+                  <Tab label="Документы" />
+                  <Tab label="Управление проектом" />
+                </Tabs>
+              </AppBar>
+              <TabContainer>
+                <Chat/>
+              </TabContainer>
+              <TabContainer>
+                <ul>
+                  <li>Документ 1</li>
+                  <li>Документ 2</li>
+                  <li>Документ 3</li>
+                </ul>
+              </TabContainer>
+              <TabContainer>
+                Управление проектом
+              </TabContainer>
             </Grid>
           </Grid>
         </Container>
       </div>
     )
+  };
+
+  handleChangeTabs = (event, newValue) => {
+    this.setState((state) => ({tabs: newValue}))
   };
 
   toggleDrawer = (side, open) => event => {
@@ -64,7 +129,6 @@ class App extends React.Component {
       <List>
         {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}
@@ -73,7 +137,6 @@ class App extends React.Component {
       <List>
         {['All mail', 'Trash', 'Spam'].map((text, index) => (
           <ListItem button key={text}>
-            <ListItemIcon>{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}</ListItemIcon>
             <ListItemText primary={text} />
           </ListItem>
         ))}

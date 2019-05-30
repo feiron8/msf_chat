@@ -9,12 +9,16 @@
   flex-grow: 1;
 }
 
+.App__side {
+  padding: 20px;
+}
+
 .App__main {
   display: flex;
   flex-grow: 1;
 }
 
-.App__message-list {
+.App__project {
   padding: 20px;
 }
 
