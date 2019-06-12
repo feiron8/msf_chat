@@ -1,11 +1,9 @@
-export const documents = state => {
-    return state.documents;
-};
+import {createSelector} from 'reselect';
 
-export const messages = state => {
-    return state.messages;
-};
+export const documents = state => state.documents;
+export const messages = state => state.messages;
+export const contacts = state => state.contacts;
 
-export const contacts = state => {
-    return state.contacts;
-};
+export const filteredContacts = createSelector(contacts,(contacts) => {
+    return contacts;
+});
