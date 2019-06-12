@@ -3,24 +3,403 @@
   <component name="ChangeListManager">
     <list default="true" id="1880f86f-5922-4b36-bbd8-f2157f74e4b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Gopkg.toml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/client/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/App.test.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Chat.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Chat.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/ContactsList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/ContactsList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MessageList.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MessageList.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/MessageList.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/MessageList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NotFound.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/NotFound.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/NotFound.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/NotFound.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/SignIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/SignUp.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/ac/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ac/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/Documents.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Documents.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/SignIn.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/pages/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/SignUp.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/constants/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/constants/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/middlewares/logger.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/middlewares/logger.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/client/src/reducer/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducer/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/selectors/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/selectors/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/store/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/store/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/init.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-stack/stack/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-stack/stack/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-stack/stack/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-stack/stack/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/go-stack/stack/stack.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/CONTRIBUTORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/README" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/decode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/decode_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/decode_amd64.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/decode_other.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/encode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/encode_amd64.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/encode_amd64.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/encode_other.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/golang/snappy/snappy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/context.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/middleware.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/mux.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/regexp.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/route.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/gorilla/mux/test_helpers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/.travis.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/LICENSE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/TESTS.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/array.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/buf.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/conn.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/conn_go18.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/connector.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/copy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/encode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/go.mod" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/notify.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/oid/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/oid/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/oid/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/rows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/scram/scram.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/ssl.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/ssl_permissions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/ssl_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/url.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/user_posix.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/user_windows.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/lib/pq/uuid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/client_conv.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/common.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/parse.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/scram.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/scram/server_conv.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/bidi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/map.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/profile.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/saslprep.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/set.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/github.com/xdg/stringprep/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/THIRD-PARTY-NOTICES" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bson.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bson_1_8.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/bsoncodec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/default_value_decoders.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/default_value_encoders.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/mode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/pointer_codec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/proxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/registry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/struct_codec.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/struct_tag_parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsoncodec/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/copier.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/extjson_parser.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/extjson_reader.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/extjson_tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/extjson_wrappers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/extjson_writer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/json_scanner.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/mode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/reader.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/value_reader.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/value_writer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsonrw/writer.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/bsontype/bsontype.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/decoder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/encoder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/marshal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/primitive/decimal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/primitive/objectid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/primitive/primitive.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/primitive_codecs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/raw.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/raw_element.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/raw_value.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/registry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/types.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/bson/unmarshal.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/etc/generate-notices.pl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/event/monitoring.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/internal/channel_connection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/internal/const.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/internal/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/internal/results.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/internal/semaphore.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/batch_cursor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/bulk_write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/change_stream.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/client.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/collection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/cursor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/database.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/errors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/index_options_builder.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/index_view.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/mongo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/aggregateoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/bulkwriteoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/changestreamoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/clientoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/clientoptions_1_10.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/clientoptions_1_9.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/collectionoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/countoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/dboptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/deleteoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/distinctoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/estimatedcountoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/findoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/gridfsoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/indexoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/insertoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/listcollectionsoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/listdatabasesoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/mongooptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/replaceoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/runcmdoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/sessionoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/transactionoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/options/updateoptions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/readconcern/readconcern.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/readpref/mode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/readpref/options.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/readpref/readpref.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/results.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/session.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/single_result.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/mongo/writeconcern/writeconcern.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/tag/tag.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/version/version.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/array.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/bsoncore/bsoncore.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/bsoncore/document.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/bsoncore/document_sequence.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/bsoncore/element.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/bsoncore/tables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/bsoncore/value.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/constructor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/document.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/element.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/mdocument.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/primitive_codecs.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/registry.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/bsonx/value.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/abort_transaction.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/aggregate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/auth.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/cred.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/default.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/gssapi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/gssapi_not_enabled.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/gssapi_not_supported.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi/gss.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi/gss_wrapper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi/gss_wrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi/sspi.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi/sspi_wrapper.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/internal/gssapi/sspi_wrapper.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/mongodbcr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/plain.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/sasl.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/scram.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/util.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/auth/x509.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/batch_cursor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/bulk_write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/commit_transaction.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/count.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/count_documents.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/create_indexes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/delete_indexes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/dispatch.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/distinct.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/drop_collection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/drop_database.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/end_sessions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/find.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/find_one_and_delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/find_one_and_replace.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/find_one_and_update.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/insert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/kill_cursors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/list_collections.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/list_collections_batch_cursor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/list_databases.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/list_indexes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/models.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/read.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/read_cursor.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/session/client_session.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/session/cluster_clock.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/session/options.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/session/server_session.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/session/session_pool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/topology/connection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/topology/fsm.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/topology/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/topology/server_options.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/topology/topology.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/topology/topology_options.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/update.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/uuid/uuid.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/mongo/driver/write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/address/addr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/abort_transaction.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/aggregate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/buildinfo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/command.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/commit_transaction.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/count.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/count_documents.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/create_indexes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/distinct.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/doc.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/drop_collection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/drop_database.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/drop_indexes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/end_sessions.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/errors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/find.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/find_and_modify.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/find_one_delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/find_one_replace.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/find_one_update.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/get_more.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/getlasterror.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/handshake.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/insert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/ismaster.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/kill_cursors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/list_collections.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/list_databases.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/list_indexes.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/namespace.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/opmsg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/opreply.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/read.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/start_session.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/update.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/command/write.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/compressor/compression.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/addr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/command_metadata.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/connection.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/error.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/keepalive_300.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/keepalive_default.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/listener.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/options.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/pool.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/proxy.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/tlsconfig.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connection/tlsconfig_clone_17.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/connstring/connstring.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/description.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/feature.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/server.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/server_kind.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/server_selector.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/topology.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/topology_kind.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/version.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/description/version_range.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/result/result.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/appenders.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/command.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/command_reply.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/compressed.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/delete.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/get_more.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/header.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/insert.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/kill_cursors.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/msg.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/query.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/readers.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/reply.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/update.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/go.mongodb.org/mongo-driver/x/network/wiremessage/wiremessage.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/CONTRIBUTORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/PATENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/crypto/pbkdf2/pbkdf2.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/sync/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/sync/CONTRIBUTORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/sync/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/sync/PATENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/sync/semaphore/semaphore.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/AUTHORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/CONTRIBUTORS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/PATENTS" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/gen/code.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/gen/gen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/triegen/compact.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/triegen/print.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/triegen/triegen.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/internal/ucd/ucd.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/transform/transform.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/cldr/base.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/cldr/cldr.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/cldr/collate.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/cldr/decode.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/cldr/makexml.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/cldr/resolve.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/cldr/slice.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/cldr/xml.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/composition.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/forminfo.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/input.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/iter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/maketables.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/normalize.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/readwriter.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/tables10.0.0.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/tables11.0.0.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/tables9.0.0.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/transform.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/trie.go" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/golang.org/x/text/unicode/norm/triegen.go" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,23 +408,44 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.69277847">
+    <splitter split-orientation="horizontal" split-proportion="0.81940013">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/ac/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="204">
-                  <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
+                <state relative-caret-position="238">
+                  <caret line="14" column="30" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="30" />
                 </state>
               </provider>
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/Chat.js">
+            <entry file="file://$PROJECT_DIR$/client/src/middlewares/request.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+                <state relative-caret-position="187">
+                  <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/main.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="204">
+                  <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+                  <folding>
+                    <element signature="e#14#150#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="289">
+                  <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -54,10 +454,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/client/src/index.js">
+            <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignUp.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="374">
-                  <caret line="22" column="94" lean-forward="true" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
+                <state relative-caret-position="323">
+                  <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -66,19 +466,10 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/reducer/documents.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="255">
-                  <caret line="15" column="27" selection-start-line="15" selection-start-column="27" selection-end-line="15" selection-end-column="27" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/constants/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="272">
-                  <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
+                <state relative-caret-position="357">
+                  <caret line="21" column="20" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="20" />
                   <folding>
                     <element signature="n#!!doc" expanded="true" />
                   </folding>
@@ -87,13 +478,34 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/ContactsList.js">
+            <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignIn.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="561">
-                  <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+                <state relative-caret-position="918">
+                  <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/reducer/session.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="19" selection-start-line="19" selection-end-line="19" />
+                  <folding>
+                    <element signature="e#0#45#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/selectors/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="85">
+                  <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
                 </state>
               </provider>
             </entry>
@@ -105,7 +517,7 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/components/pages/App.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="568">
+                <state relative-caret-position="578">
                   <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
                 </state>
               </provider>
@@ -120,12 +532,14 @@
       <list>
         <option value="CSS File" />
         <option value="JavaScript File" />
+        <option value="Go File" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>handleChangeIndex</find>
+      <find>v</find>
     </findStrings>
   </component>
   <component name="GOROOT" path="C:\Go" />
@@ -139,25 +553,11 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/models/message.go" />
-        <option value="$PROJECT_DIR$/models/attachment.go" />
-        <option value="$PROJECT_DIR$/models/chat.go" />
-        <option value="$PROJECT_DIR$/models/project.go" />
-        <option value="$PROJECT_DIR$/models/milestone.go" />
-        <option value="$PROJECT_DIR$/models/init.go" />
-        <option value="$PROJECT_DIR$/main.go" />
-        <option value="$PROJECT_DIR$/models/user.go" />
-        <option value="$PROJECT_DIR$/client/src/App.js" />
-        <option value="$PROJECT_DIR$/client/src/index.css" />
-        <option value="$PROJECT_DIR$/client/src/App.css" />
-        <option value="$PROJECT_DIR$/client/src/SignIn.css" />
         <option value="$PROJECT_DIR$/client/src/NotFound.js" />
         <option value="$PROJECT_DIR$/client/src/SignIn.js" />
         <option value="$PROJECT_DIR$/client/src/NotFound.css" />
         <option value="$PROJECT_DIR$/client/src/components/SignUp.js" />
         <option value="$PROJECT_DIR$/client/src/components/Message.js" />
-        <option value="$PROJECT_DIR$/client/src/store/index.js" />
-        <option value="$PROJECT_DIR$/client/src/ac/index.js" />
         <option value="$PROJECT_DIR$/client/src/reducer/contacts.js" />
         <option value="$PROJECT_DIR$/client/src/reducer/messages.js" />
         <option value="$PROJECT_DIR$/client/src/components/InputLine.js" />
@@ -168,25 +568,42 @@
         <option value="$PROJECT_DIR$/client/src/components/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/pages/AppContent.js" />
         <option value="$PROJECT_DIR$/client/src/components/pages/AppSide.js" />
-        <option value="$PROJECT_DIR$/client/src/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/layout/AppSide.js" />
         <option value="$PROJECT_DIR$/client/src/components/ContactsList.css" />
         <option value="$PROJECT_DIR$/client/src/components/MessageList.css" />
         <option value="$PROJECT_DIR$/client/src/components/Chat.css" />
         <option value="$PROJECT_DIR$/client/src/components/layout/AppContent.css" />
-        <option value="$PROJECT_DIR$/client/src/components/pages/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/ContactsList.js" />
         <option value="$PROJECT_DIR$/client/src/components/ProjectForm.js" />
         <option value="$PROJECT_DIR$/client/src/components/pages/App.css" />
         <option value="$PROJECT_DIR$/client/src/components/ProjectForm.css" />
-        <option value="$PROJECT_DIR$/client/src/reducer/index.js" />
-        <option value="$PROJECT_DIR$/client/src/constants/index.js" />
         <option value="$PROJECT_DIR$/client/src/reducer/documents.js" />
         <option value="$PROJECT_DIR$/client/src/components/MessageList.js" />
-        <option value="$PROJECT_DIR$/client/src/components/Documents.js" />
         <option value="$PROJECT_DIR$/client/src/components/layout/AppContent.js" />
         <option value="$PROJECT_DIR$/client/public/index.html" />
         <option value="$PROJECT_DIR$/client/src/components/Chat.js" />
+        <option value="$PROJECT_DIR$/client/src/middlewares/logger.js" />
+        <option value="$PROJECT_DIR$/client/src/components/Documents.js" />
+        <option value="$PROJECT_DIR$/client/src/components/pages/App.js" />
+        <option value="$PROJECT_DIR$/models/init.go" />
+        <option value="$PROJECT_DIR$/server.go" />
+        <option value="$PROJECT_DIR$/oauth/server.go" />
+        <option value="$PROJECT_DIR$/controllers/auth.go" />
+        <option value="$PROJECT_DIR$/client/src/reducer/token.js" />
+        <option value="$PROJECT_DIR$/client/src/reducer/auth.js" />
+        <option value="$PROJECT_DIR$/client/src/reducer/index.js" />
+        <option value="$PROJECT_DIR$/client/src/reducer/session.js" />
+        <option value="$PROJECT_DIR$/client/src/selectors/index.js" />
+        <option value="$PROJECT_DIR$/client/src/index.js" />
+        <option value="$PROJECT_DIR$/client/src/components/pages/SignIn.js" />
+        <option value="$PROJECT_DIR$/client/src/store/index.js" />
+        <option value="$PROJECT_DIR$/client/src/middlewares/token.js" />
+        <option value="$PROJECT_DIR$/client/src/constants/index.js" />
+        <option value="$PROJECT_DIR$/client/src/middlewares/request.js" />
+        <option value="$PROJECT_DIR$/client/src/ac/index.js" />
+        <option value="$PROJECT_DIR$/main.go" />
+        <option value="$PROJECT_DIR$/client/src/components/pages/SignUp.css" />
+        <option value="$PROJECT_DIR$/client/src/components/pages/SignUp.js" />
       </list>
     </option>
   </component>
@@ -197,7 +614,7 @@
     <auto-save>true</auto-save>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1113" />
+    <option name="x" value="-930" />
     <option name="y" value="-8" />
     <option name="width" value="974" />
     <option name="height" value="1047" />
@@ -226,19 +643,6 @@
               <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
               <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="public" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -261,14 +665,6 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="layout" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
-              <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="components" type="462c0819:PsiDirectoryNode" />
               <item name="pages" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -283,6 +679,13 @@
               <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="middlewares" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="reducer" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -290,7 +693,24 @@
               <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="selectors" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="client" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="store" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
+              <item name="msf_chat" type="462c0819:PsiDirectoryNode" />
+              <item name="oauth" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -300,6 +720,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="configurable.Global.GOPATH.is.expanded" value="true" />
@@ -310,7 +731,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/reducer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/pages" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -319,18 +740,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\reducer" />
       <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\components\pages" />
+      <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\middlewares" />
+      <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\reducer" />
+      <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\controllers" />
       <recent name="C:\Users\Rodion\go\src\github.com\feiron8\msf_chat\client\src\components" />
-      <recent name="C:\Users\Rodion\go\src\github.com\feiron8\msf_chat\client\public" />
-      <recent name="C:\Users\Rodion\go\src\github.com\feiron8\msf_chat\client\src\reducer" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\oauth" />
       <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\components\layout" />
       <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\components\pages" />
       <recent name="C:\Users\Rodion\go\src\github.com\feiron8\msf_chat\client\public\images" />
       <recent name="C:\Users\Rodion\go\src\github.com\feiron8\msf_chat\client\src\components" />
-      <recent name="C:\Users\Rodion\go\src\github.com\feiron8\msf_chat\client\src" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -346,24 +767,24 @@
     </option>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.12899786" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.13166311" />
+      <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.19083156" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49307036" weight="0.18309858" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.48027718" weight="0.18309858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" />
-      <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49200428" visible="true" weight="0.21885157" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5079957" side_tool="true" visible="true" weight="0.21885157" />
+      <window_info anchor="bottom" id="Version Control" order="6" sideWeight="0.49946696" weight="0.32936078" />
+      <window_info anchor="bottom" id="TODO" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.52025586" side_tool="true" visible="true" weight="0.19393283" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.47974414" visible="true" weight="0.19393283" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -395,72 +816,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/IDEF0_context.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/IDEF0_decomp.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/attachment.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="15" selection-start-line="9" selection-start-column="15" selection-end-line="9" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/chat.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/role.go" />
-    <entry file="file://$PROJECT_DIR$/models/milestone_type.go" />
-    <entry file="file://$PROJECT_DIR$/models/milestone.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="24" lean-forward="true" selection-start-line="6" selection-start-column="24" selection-end-line="6" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/message.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="12" lean-forward="true" selection-start-line="5" selection-start-column="12" selection-end-line="5" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/project.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="1" selection-start-line="8" selection-start-column="1" selection-end-line="8" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="15" column="63" selection-start-line="15" selection-start-column="63" selection-end-line="15" selection-end-column="63" />
-          <folding>
-            <element signature="e#14#150#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/manifest.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="-289">
-            <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/pages/App.test.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -475,23 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="605">
           <caret line="45" selection-start-line="45" selection-end-line="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/init.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="39" selection-start-line="8" selection-start-column="39" selection-end-line="8" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/controllers/users.go">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
-          <folding>
-            <element signature="e#21#131#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -529,30 +867,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignUp.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="498">
-          <caret line="113" column="37" selection-start-line="113" selection-start-column="37" selection-end-line="113" selection-end-column="37" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/reducer/messages.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="33" lean-forward="true" selection-start-line="9" selection-start-column="33" selection-end-line="9" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignIn.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="379">
-          <caret line="71" lean-forward="true" selection-start-line="71" selection-end-line="71" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -576,9 +894,6 @@
           <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/package.json">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/layout/AppContent.css">
       <provider selected="true" editor-type-id="text-editor">
@@ -640,7 +955,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/pages/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="568">
+        <state relative-caret-position="578">
           <caret line="34" column="1" selection-start-line="34" selection-start-column="1" selection-end-line="34" selection-end-column="1" />
         </state>
       </provider>
@@ -662,62 +977,12 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/reducer/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="2" selection-start-line="9" selection-start-column="2" selection-end-line="9" selection-end-column="2" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Documents.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="11" lean-forward="true" selection-start-line="9" selection-start-column="11" selection-end-line="9" selection-end-column="11" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/MessageList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
           <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/pages/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="19" lean-forward="true" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/store/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="33" selection-start-line="3" selection-start-column="33" selection-end-line="3" selection-end-column="33" />
-          <folding>
-            <element signature="e#0#33#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/constants/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="49" lean-forward="true" selection-start-line="16" selection-start-column="49" selection-end-line="16" selection-end-column="49" />
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -735,9 +1000,87 @@
     <entry file="file://$PROJECT_DIR$/client/src/components/ContactsList.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="561">
-          <caret line="33" column="31" lean-forward="true" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
+          <caret line="33" column="31" selection-start-line="33" selection-start-column="31" selection-end-line="33" selection-end-column="31" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/middlewares/logger.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="46" selection-start-line="2" selection-start-column="46" selection-end-line="2" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/pages/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/init.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+          <folding>
+            <element signature="e#16#231#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/users.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="15" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <element signature="e#21#131#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/public/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="8" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/build/index.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gopkg.toml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="444">
+          <caret line="37" column="30" lean-forward="true" selection-start-line="37" selection-start-column="30" selection-end-line="37" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/chats.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="7" selection-start-line="2" selection-start-column="7" selection-end-line="2" selection-end-column="7" />
+          <folding>
+            <element signature="e#21#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/oauth/server.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="380">
+          <caret line="24" column="18" selection-start-line="24" selection-start-column="18" selection-end-line="24" selection-end-column="18" />
+          <folding>
+            <element signature="e#14#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -749,34 +1092,145 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/ac/index.js">
+    <entry file="file://$PROJECT_DIR$/client/src/components/Documents.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="1" lean-forward="true" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/public/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="8" lean-forward="true" selection-start-line="11" selection-start-column="8" selection-end-line="11" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/Chat.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="49" column="33" lean-forward="true" selection-start-line="49" selection-start-column="33" selection-end-line="49" selection-end-column="33" />
+        <state relative-caret-position="340">
+          <caret line="20" column="35" selection-start-line="20" selection-start-column="25" selection-end-line="20" selection-end-column="35" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/auth.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="53" selection-start-line="8" selection-start-column="53" selection-end-line="8" selection-end-column="53" />
+          <folding>
+            <element signature="e#21#76#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/reducer/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/store/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" column="21" lean-forward="true" selection-start-line="9" selection-start-column="21" selection-end-line="9" selection-end-column="21" />
+          <folding>
+            <element signature="e#0#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/middlewares/token.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/constants/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="20" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="20" />
+          <folding>
+            <element signature="n#!!doc" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#14#150#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="94" lean-forward="true" selection-start-line="22" selection-start-column="94" selection-end-line="22" selection-end-column="94" />
+        <state relative-caret-position="289">
+          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/reducer/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/selectors/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="46" selection-start-line="5" selection-start-column="46" selection-end-line="5" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Chat.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="6" selection-start-line="11" selection-start-column="6" selection-end-line="11" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/middlewares/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="34" selection-start-line="11" selection-start-column="34" selection-end-line="11" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignUp.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" lean-forward="true" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/ac/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="30" selection-start-line="14" selection-start-column="16" selection-end-line="14" selection-end-column="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="918">
+          <caret line="105" column="25" selection-start-line="105" selection-start-column="25" selection-end-line="105" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignUp.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
           </folding>

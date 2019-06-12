@@ -15,3 +15,10 @@ Documents
  */
 export const ADD_DOCUMENT = 'ADD_DOCUMENT';
 export const REMOVE_DOCUMENT = 'REMOVE_DOCUMENT';
+
+/*
+Auth
+ */
+export const SIGN_IN = 'SIGN_IN';
+export const SIGN_UP = 'SIGN_UP';
+export const SIGN_OUT = 'SIGN_OUT';

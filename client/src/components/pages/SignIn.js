@@ -108,9 +108,6 @@ export default function SignIn() {
                         </Button>
                         <Grid container>
                             <Grid item xs>
-                                <Link href="/recover" variant="body2">
-                                    Забыли пароль?
-                                </Link>
                             </Grid>
                             <Grid item>
                                 <Link href="/signup" variant="body2">

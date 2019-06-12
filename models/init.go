@@ -2,13 +2,9 @@ package models
 
 import (
 	"context"
-	"database/sql"
-	"log"
-	"fmt"
-	"go.mongodb.org/mongo-driver/bson"
 	"go.mongodb.org/mongo-driver/mongo"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"go.mongodb.org/mongo-driver/mongo/readpref"
+	"log"
 )
 
 var client *mongo.Client

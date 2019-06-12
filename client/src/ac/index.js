@@ -1,4 +1,4 @@
-import {SEND_MESSAGE} from '../constants'
+import {SEND_MESSAGE, SIGN_UP, SIGN_IN} from '../constants'
 
 export function sendMessageAction(text) {
   return {
@@ -9,5 +9,29 @@ export function sendMessageAction(text) {
         text: text
       }
     }
+  }
+}
+
+export function registerAction(user) {
+  return {
+    type: SIGN_UP,
+    payload: {
+      data: user
+    },
+    request: true,
+    url: "/signup",
+    method: "POST"
+  }
+}
+
+export function authAction(user) {
+  return {
+    type: SIGN_IN,
+    payload: {
+      data: user
+    },
+    request: true,
+    url: "/signin",
+    method: "POST"
   }
 }

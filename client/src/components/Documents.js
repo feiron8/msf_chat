@@ -5,7 +5,7 @@ class Documents extends React.Component {
     render() {
         const documents = this.props.documents.map((document) => {
             return (
-                <li><a href={document.link}>{document.title}</a></li>
+                <li key={document.id}><a href={document.link}>{document.title}</a></li>
             )
         });
 
