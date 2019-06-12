@@ -1,0 +1,11 @@
+.ProjectForm {
+    display: flex;
+    flex-grow: 1;
+    padding: 30px;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.ProjectForm .ProjectForm__save-btn {
+    margin-top: 30px;
+}

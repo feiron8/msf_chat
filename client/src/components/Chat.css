@@ -1,0 +1,25 @@
+.Chat__input {
+    display: flex;
+}
+
+.Chat__input.rce-container-input {
+    background: none;
+}
+
+.Chat__input .rce-input-textarea {
+    flex-grow: 1;
+    margin-right: 10px;
+    min-height: 100px;
+    max-height: 100px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.Chat__input .rce-input-buttons button {
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+}

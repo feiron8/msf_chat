@@ -1,0 +1,10 @@
+.App__tabs {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    padding: 20px;
+}
+
+.App__documents {
+    list-style: none;
+}

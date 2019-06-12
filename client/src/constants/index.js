@@ -9,3 +9,9 @@ Contacts
  */
 export const ADD_CONTACT = 'ADD_CONTACT';
 export const REMOVE_CONTACT = 'REMOVE_CONTACT';
+
+/*
+Documents
+ */
+export const ADD_DOCUMENT = 'ADD_DOCUMENT';
+export const REMOVE_DOCUMENT = 'REMOVE_DOCUMENT';

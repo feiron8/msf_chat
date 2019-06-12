@@ -1,0 +1,7 @@
+.ContactsList__item {
+    cursor: pointer;
+}
+
+.ContactsList__item:hover {
+    background: rgba(0,0,0,.1);
+}

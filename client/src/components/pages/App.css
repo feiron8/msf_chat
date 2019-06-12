@@ -19,9 +19,17 @@
 }
 
 .App__project {
-  padding: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
 }
 
 .App__menu-list {
   width: 250px
+}
+
+.App__side-title .App__side-title-text {
+    display: inline;
+    font-size: 20px;
+    margin-left: 10px;
 }

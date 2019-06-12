@@ -4,10 +4,10 @@ import {BrowserRouter, Route, Switch} from 'react-router-dom';
 import {Provider} from 'react-redux';
 import store from './store';
 import './index.css';
-import App from './components/App';
-import SignIn from './components/SignIn'
-import SignUp from './components/SignUp'
-import NotFound from './components/NotFound'
+import App from './components/pages/App';
+import SignIn from './components/pages/SignIn'
+import SignUp from './components/pages/SignUp'
+import NotFound from './components/pages/NotFound'
 
 const Router = (
     <BrowserRouter>
