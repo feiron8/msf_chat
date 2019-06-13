@@ -6,7 +6,7 @@ import sessionReducer from './session';
 
 export default combineReducers({
   messages: messagesReducer,
-  contacts: contactsReducer,
+  projects: contactsReducer,
   documents: documentsReducer,
   session: sessionReducer
 })

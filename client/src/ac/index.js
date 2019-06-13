@@ -1,4 +1,4 @@
-import {SEND_MESSAGE, SIGN_UP, SIGN_IN} from '../constants'
+import {SEND_MESSAGE, SIGN_UP, SIGN_IN, ADD_PROJECT, INIT_PROJECT} from '../constants'
 
 export function sendMessageAction(text) {
   return {
@@ -33,5 +33,31 @@ export function authAction(user) {
     request: true,
     url: "/api/signin",
     method: "post"
+  }
+}
+
+export function addProjectAction(project) {
+  return {
+    type: ADD_PROJECT,
+    payload: {
+      data: project
+    },
+    request: true,
+    url: "/api/projects",
+    method: "post"
+  }
+}
+
+export function initProjectAction() {
+  return {
+    type: INIT_PROJECT,
+    request: true,
+    payload: {
+      data: {
+        userId: "userId"
+      }
+    },
+    url: "/api/users/userId/projects",
+    method: "get"
   }
 }

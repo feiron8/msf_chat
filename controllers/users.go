@@ -8,6 +8,12 @@ import (
 	"github.com/feiron8/msf_chat/models"
 )
 
+func GetUserProjects(w http.ResponseWriter, r *http.Request) {
+	projects := models.GetUserProjects()
+	json.NewEncoder(w).Encode(projects)
+}
+
+
 func GetUsers(w http.ResponseWriter, r *http.Request) {
 	var users []models.User
 	users = append(users, models.User{
@@ -56,8 +62,3 @@ func GetUserChats(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "GetUserChats")
 }
 
-func GetUserProjects(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	fmt.Println(vars["user"])
-	fmt.Fprintf(w, "GetUserProjects")
-}

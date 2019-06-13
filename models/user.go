@@ -18,6 +18,7 @@ type User struct {
 }
 
 var usersCollection = "users"
+var projectCollection = "projects"
 
 func CheckUser(user User) bool {
 	var result User
@@ -25,8 +26,6 @@ func CheckUser(user User) bool {
 	collection := Client.Database(Database).Collection(usersCollection)
 	filter := bson.D{{"email", user.Email}}
 	err := collection.FindOne(context.TODO(), filter).Decode(&result)
-	fmt.Print(user)
-	fmt.Print(result)
 
 	err = bcrypt.CompareHashAndPassword([]byte(result.Pass), []byte(user.Pass))
 	if err != nil {
@@ -75,6 +74,33 @@ func GetUsers() []*User {
 
 	if err := cur.Err(); err != nil {
 		log.Fatal(err)
+	}
+
+	cur.Close(context.TODO())
+
+	return results
+}
+
+func GetUserProjects() []*Project {
+	collection := Client.Database(Database).Collection(projectCollection)
+	var results []*Project
+	cur, err := collection.Find(context.TODO(), bson.D{{}}, options.Find())
+	if err != nil {
+		log.Fatal(err)
+	}
+
+
+	for cur.Next(context.TODO()) {
+		var elem Project
+
+		err := cur.Decode(&elem)
+		if err != nil {
+			log.Fatal(err)
+		}
+
+		fmt.Print(elem)
+
+		results = append(results, &elem)
 	}
 
 	cur.Close(context.TODO())

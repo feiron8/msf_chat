@@ -7,7 +7,6 @@ import ListItemText from "@material-ui/core/ListItemText";
 import Divider from "@material-ui/core/Divider";
 import IconButton from "@material-ui/core/IconButton";
 import ViewHeadline from "@material-ui/icons/ViewHeadline"
-import ContactsList from "../ContactsList";
 import "./AppSide.css"
 import Fab from '@material-ui/core/Fab';
 import AddIcon from '@material-ui/icons/Add';
@@ -16,6 +15,8 @@ import TextField from '@material-ui/core/TextField';
 import { makeStyles } from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
 import {connect} from "react-redux"
+import {addProjectAction} from "../../ac"
+import ProjectsList from "../ProjectsList";
 
 class AppSide extends React.Component {
     state = {
@@ -39,8 +40,8 @@ class AppSide extends React.Component {
                             Список контактов
                         </Typography>
                     </div>
-                    <ContactsList/>
-                    <SimpleModal name={this.state.Name} description={this.state.Description} changeName={this.changeName} changeDescription={this.changeDescription}/>
+                    <ProjectsList/>
+                    <SimpleModal addProject={this.onAddProject} name={this.state.Name} description={this.state.Description} changeName={this.changeName} changeDescription={this.changeDescription}/>
                 </div>
             </React.Fragment>
         )
@@ -52,6 +53,14 @@ class AppSide extends React.Component {
 
     changeDescription = (event) => {
         this.setState({Description: event.target.value});
+    };
+
+    onAddProject = (event) => {
+        event.preventDefault();
+        this.props.addProject({
+            Name: this.state.Name,
+            Description: this.state.Description
+        });
     };
 
     toggleDrawer = (side, open) => event => {
@@ -162,7 +171,7 @@ function SimpleModal(props) {
                             variant="filled"
                             className="App__side-input"
                         />
-                        <Button variant="contained" color="primary">
+                        <Button variant="contained" color="primary" onClick={props.addProject}>
                             Добавить
                         </Button>
                     </Typography>
@@ -172,4 +181,6 @@ function SimpleModal(props) {
     );
 }
 
-export default AppSide
+export default connect(null,{
+    addProject: addProjectAction
+})(AppSide)

@@ -1,9 +1,9 @@
 import {SEND_MESSAGE, EDIT_MESSAGE} from '../constants'
 
 const messages = [
-  {id: 5, text: 'hello Dimitri'},
-  {id: 7, text: 'my name is Boris'},
-  {id: 8, text: 'gde vashi dokozatelstva'}
+  {id: 5, text: 'Сообщение 1'},
+  {id: 7, text: 'Сообщение 2'},
+  {id: 8, text: 'Ещё один пример сообщения'}
 ];
 
 export default (messagesState = messages, action) => {
