@@ -1,0 +1,21 @@
+.App__side {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.App__side .chat-list {
+    flex-grow: 1;
+}
+
+.App__side-fab {
+    margin: 10px;
+}
+
+.App__side-add {
+    margin-right: 5px;
+}
+
+.App__side-input {
+    width: 100%;
+}

@@ -3,18 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="1880f86f-5922-4b36-bbd8-f2157f74e4b4" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/client/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/ac/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/ac/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/SignIn.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/SignIn.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/SignIn.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/SignIn.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/pages/SignUp.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/pages/SignUp.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/middlewares/request.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/middlewares/request.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/reducer/session.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/reducer/session.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/auth.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/auth.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controllers/users.go" beforeDir="false" afterPath="$PROJECT_DIR$/controllers/users.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/init.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/init.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.go" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/components/layout/AppSide.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/layout/AppSide.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -23,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.6081761">
+    <splitter split-orientation="horizontal" split-proportion="0.82260025">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="false">
@@ -36,10 +25,22 @@
             </entry>
           </file>
           <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="427">
+                  <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
+                  <folding>
+                    <element signature="e#0#26#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/middlewares/request.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="306">
-                  <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+                  <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
                 </state>
               </provider>
             </entry>
@@ -48,7 +49,7 @@
             <entry file="file://$PROJECT_DIR$/client/src/reducer/session.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="374">
-                  <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+                  <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#45#0" expanded="true" />
                   </folding>
@@ -65,56 +66,32 @@
               </provider>
             </entry>
           </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/controllers/projects.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="136">
+                  <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
+                  <folding>
+                    <element signature="e#21#50#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/models/project.go">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="153">
+                  <caret line="9" selection-start-line="9" selection-end-line="9" />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/models/user.go">
+            <entry file="file://$PROJECT_DIR$/client/src/components/layout/AppSide.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="408">
-                  <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
-                  <folding>
-                    <element signature="e#16#89#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controllers/users.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="19" selection-start-column="19" selection-end-column="19" />
-                  <folding>
-                    <element signature="e#21#131#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/controllers/auth.go">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="510">
-                  <caret line="30" lean-forward="true" selection-start-line="30" selection-end-line="30" />
-                  <folding>
-                    <element signature="e#21#76#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignUp.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="183">
-                  <caret line="11" selection-start-line="11" selection-end-line="12" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignIn.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="353">
-                  <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+                <state relative-caret-position="659">
+                  <caret line="86" column="6" lean-forward="true" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
                   </folding>
@@ -135,11 +112,20 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignIn.css">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="591">
                   <caret line="69" column="17" selection-start-line="69" selection-start-column="17" selection-end-line="69" selection-end-column="17" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/client/src/components/layout/AppSide.css">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="323">
+                  <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
                 </state>
               </provider>
             </entry>
@@ -174,7 +160,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/client/src/components/Message.js" />
         <option value="$PROJECT_DIR$/client/src/reducer/contacts.js" />
         <option value="$PROJECT_DIR$/client/src/reducer/messages.js" />
         <option value="$PROJECT_DIR$/client/src/components/InputLine.js" />
@@ -185,7 +170,6 @@
         <option value="$PROJECT_DIR$/client/src/components/App.js" />
         <option value="$PROJECT_DIR$/client/src/components/pages/AppContent.js" />
         <option value="$PROJECT_DIR$/client/src/components/pages/AppSide.js" />
-        <option value="$PROJECT_DIR$/client/src/components/layout/AppSide.js" />
         <option value="$PROJECT_DIR$/client/src/components/ContactsList.css" />
         <option value="$PROJECT_DIR$/client/src/components/MessageList.css" />
         <option value="$PROJECT_DIR$/client/src/components/Chat.css" />
@@ -225,6 +209,8 @@
         <option value="$PROJECT_DIR$/client/src/components/pages/SignIn.css" />
         <option value="$PROJECT_DIR$/client/src/components/pages/SignIn.js" />
         <option value="$PROJECT_DIR$/models/user.go" />
+        <option value="$PROJECT_DIR$/client/src/components/layout/AppSide.css" />
+        <option value="$PROJECT_DIR$/client/src/components/layout/AppSide.js" />
       </list>
     </option>
   </component>
@@ -286,7 +272,7 @@
               <item name="client" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="components" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
+              <item name="layout" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="msf_chat" type="b2602c69:ProjectViewProjectNode" />
@@ -357,7 +343,7 @@
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.sdk.automatically.set" value="true" />
     <property name="go.vendoring.notification.had.been.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/pages" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/client/src/components/layout" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
@@ -366,11 +352,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\components\layout" />
       <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\components\pages" />
       <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\middlewares" />
       <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\client\src\reducer" />
       <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\controllers" />
-      <recent name="C:\Users\Rodion\go\src\github.com\feiron8\msf_chat\client\src\components" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\Родион\go\src\github.com\feiron8\msf_chat\oauth" />
@@ -396,12 +382,12 @@
     <frame x="-1928" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.15245202" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49867374" visible="true" weight="0.12260128" />
       <window_info id="Structure" order="1" sideWeight="0.50132626" side_tool="true" weight="0.19083156" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936078" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.4792111" weight="0.18309858" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.47867805" weight="0.18309858" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -409,8 +395,8 @@
       <window_info anchor="bottom" id="TODO" order="7" />
       <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.52132195" side_tool="true" visible="true" weight="0.19393283" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.47867805" visible="true" weight="0.19393283" />
+      <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.521855" side_tool="true" visible="true" weight="0.19393283" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="11" sideWeight="0.478145" visible="true" weight="0.19393283" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -442,26 +428,6 @@
     <option name="version" value="1" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/client/src/components/pages/App.test.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/er.png">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="12" lean-forward="true" selection-start-line="10" selection-start-column="12" selection-end-line="10" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/index.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
@@ -532,16 +498,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
           <caret line="2" column="1" selection-start-line="2" selection-start-column="1" selection-end-line="2" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/layout/AppSide.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="47" selection-start-line="27" selection-start-column="47" selection-end-line="27" selection-end-column="67" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,16 +670,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" column="44" selection-start-line="17" selection-start-column="44" selection-end-line="17" selection-end-column="44" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/selectors/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -792,23 +738,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/middlewares/request.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="47" lean-forward="true" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/reducer/session.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="1" lean-forward="true" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
-          <folding>
-            <element signature="e#0#45#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignIn.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="591">
@@ -823,6 +752,16 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/reducer/session.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="22" column="1" selection-start-line="22" selection-start-column="1" selection-end-line="22" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/client/src/ac/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
@@ -830,12 +769,39 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignIn.js">
+    <entry file="file://$PROJECT_DIR$/client/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="353">
-          <caret line="134" column="11" selection-start-line="134" selection-start-column="11" selection-end-line="134" selection-end-column="11" />
+        <state relative-caret-position="427">
+          <caret line="31" column="16" selection-start-line="31" selection-start-column="16" selection-end-line="31" selection-end-column="16" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/middlewares/request.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/pages/SignIn.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" column="29" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/user.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+          <folding>
+            <element signature="e#16#89#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -847,12 +813,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/models/user.go">
+    <entry file="file://$PROJECT_DIR$/controllers/projects.go">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="28" column="21" selection-start-line="28" selection-start-column="21" selection-end-line="28" selection-end-column="21" />
+        <state relative-caret-position="136">
+          <caret line="8" column="32" selection-start-line="8" selection-start-column="32" selection-end-line="8" selection-end-column="32" />
           <folding>
-            <element signature="e#16#89#0" expanded="true" />
+            <element signature="e#21#50#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/project.go">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="9" selection-start-line="9" selection-end-line="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/layout/AppSide.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="19" column="16" selection-start-line="19" selection-start-column="16" selection-end-line="19" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/layout/AppSide.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="659">
+          <caret line="86" column="6" lean-forward="true" selection-start-line="86" selection-start-column="6" selection-end-line="86" selection-end-column="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
