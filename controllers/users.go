@@ -11,12 +11,11 @@ import (
 func GetUsers(w http.ResponseWriter, r *http.Request) {
 	var users []models.User
 	users = append(users, models.User{
-		Id: 1,
-		Username: "feiron8",
-		Password: "123",
+		Id: "1",
+		Email: "feiron8",
+		Pass: "123",
 		Name: "Rodion",
-		Surname: "Fedotov",
-		Status: "Good",
+		Lastname: "Fedotov",
 	})
 
 	w.Header().Set("Content-Type", "application/json")

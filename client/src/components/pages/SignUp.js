@@ -9,16 +9,22 @@ import Container from '@material-ui/core/Container';
 import {connect} from "react-redux";
 import {registerAction} from "../../ac";
 import "./SignUp.css"
+import {Redirect} from "react-router-dom"
 
 class SignUp extends React.Component {
     state = {
         name: "",
         lastName: "",
         email: "",
-        pass: ""
+        pass: "",
+        toSignIn: false
     };
 
     render = () => {
+        if (this.state.toSignIn === true) {
+            return <Redirect to='/signin' />
+        }
+
         return (
             <Container component="main" maxWidth="xs">
                 <CssBaseline />
@@ -134,12 +140,20 @@ class SignUp extends React.Component {
     };
 
     signUpBtn = (event) => {
+        event.preventDefault();
         this.props.registerAction({
-            name: this.state.name,
-            lastName: this.state.lastName,
-            email: this.state.email,
-            pass: this.state.pass
+            Name: this.state.name,
+            Lastname: this.state.lastName,
+            Email: this.state.email,
+            Pass: this.state.pass
         });
+        this.setState({
+            name: "",
+            lastname: "",
+            email: "",
+            pass: "",
+            toSignIn: true
+        })
     }
 }
 

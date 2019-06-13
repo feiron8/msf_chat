@@ -64,3 +64,13 @@
 .signin__input input {
     width: 100%;
 }
+
+.signin .signin__submit {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.signin__form {
+    width: 100%;
+    margin-top: 10px;
+}

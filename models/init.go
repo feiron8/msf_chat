@@ -7,22 +7,23 @@ import (
 	"log"
 )
 
-var client *mongo.Client
+var Client *mongo.Client
+var Database = "local"
 
 func InitDB(dataSourceName string) {
 	var err error
 
-	client, err = mongo.NewClient(options.Client().ApplyURI(dataSourceName))
+	Client, err = mongo.NewClient(options.Client().ApplyURI(dataSourceName))
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	err = client.Connect(context.TODO())
+	err = Client.Connect(context.TODO())
 	if err != nil {
 		log.Fatal(err)
 	}
 
-	err = client.Ping(context.TODO(), nil)
+	err = Client.Ping(context.TODO(), nil)
 	if err != nil {
 		log.Fatal(err)
 	}

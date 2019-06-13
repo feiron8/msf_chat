@@ -19,8 +19,8 @@ export function registerAction(user) {
       data: user
     },
     request: true,
-    url: "/signup",
-    method: "POST"
+    url: "/api/signup",
+    method: "post"
   }
 }
 
@@ -31,7 +31,7 @@ export function authAction(user) {
       data: user
     },
     request: true,
-    url: "/signin",
-    method: "POST"
+    url: "/api/signin",
+    method: "post"
   }
 }

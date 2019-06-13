@@ -1,22 +1,19 @@
 import React from 'react';
 import './SignIn.css';
-import Avatar from '@material-ui/core/Avatar';
 import Button from '@material-ui/core/Button';
 import CssBaseline from '@material-ui/core/CssBaseline';
-import TextField from '@material-ui/core/TextField';
 import { withStyles, createMuiTheme } from '@material-ui/core/styles';
 import { fade } from '@material-ui/core/styles/colorManipulator';
-import FormControlLabel from '@material-ui/core/FormControlLabel';
-import Checkbox from '@material-ui/core/Checkbox';
 import Link from '@material-ui/core/Link';
 import Paper from '@material-ui/core/Paper';
-import Box from '@material-ui/core/Box';
 import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import InputBase from '@material-ui/core/InputBase';
 import InputLabel from '@material-ui/core/InputLabel';
 import FormControl from '@material-ui/core/FormControl';
-import { makeStyles } from '@material-ui/core/styles';
+import {connect} from "react-redux";
+import {authAction} from "../../ac";
+import {Redirect} from "react-router-dom"
 
 const BootstrapInput = withStyles(theme => ({
     root: {
@@ -53,71 +50,100 @@ const BootstrapInput = withStyles(theme => ({
     },
 }))(InputBase);
 
-const useStyles = makeStyles(theme => ({
-    avatar: {
-        margin: theme.spacing(1),
-        backgroundColor: theme.palette.secondary.main,
-    },
-    form: {
-        width: '100%', // Fix IE 11 issue.
-        marginTop: theme.spacing(1),
-    },
-    submit: {
-        margin: theme.spacing(3, 0, 2),
-    },
-}));
+class SignIn extends React.Component {
+    state = {
+        email: "",
+        pass: "",
+        toMain: false
+    };
 
-export default function SignIn() {
-    const classes = useStyles();
+    render() {
+        if (this.state.toMain === true) {
+            return <Redirect to='/' />
+        }
 
-    return (
-        <Grid container component="main" className="signin">
-            <CssBaseline />
-            <Grid item xs={false} sm={4} md={7} className="signin__image">
-                  <img src="/images/msf.png" alt="MSF" className="signin__msf"/>
-            </Grid>
-            <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square className="signin__side">
-                <div className="signin__side-container">
-                    <Typography component="h1" variant="h3" className="signin__header">
-                        MSF-чат
-                    </Typography>
-                    <Typography component="h1" variant="h5" className="signin__header">
-                        Авторизация
-                    </Typography>
-                    <form className={classes.form} noValidate className="signin__form">
-                        <FormControl className="signin__control">
-                            <InputLabel shrink htmlFor="bootstrap-control" className="signin__input-label">
-                                Логин
-                            </InputLabel>
-                            <BootstrapInput id="bootstrap-input" className="signin__input" />
-                        </FormControl>
-                        <FormControl className="signin__control">
-                            <InputLabel shrink htmlFor="bootstrap-input" className="signin__input-label">
-                                Пароль
-                            </InputLabel>
-                            <BootstrapInput id="bootstrap-input" className="signin__input" />
-                        </FormControl>
-                        <Button
-                        type="submit"
-                        fullWidth
-                        variant="contained"
-                        color="primary"
-                        className={classes.submit}
-                        >
-                            Войти
-                        </Button>
-                        <Grid container>
-                            <Grid item xs>
+        return (
+            <Grid container component="main" className="signin">
+                <CssBaseline />
+                <Grid item xs={false} sm={4} md={7} className="signin__image">
+                    <img src="/images/msf.png" alt="MSF" className="signin__msf"/>
+                </Grid>
+                <Grid item xs={12} sm={8} md={5} component={Paper} elevation={6} square className="signin__side">
+                    <div className="signin__side-container">
+                        <Typography component="h1" variant="h3" className="signin__header">
+                            MSF-чат
+                        </Typography>
+                        <Typography component="h1" variant="h5" className="signin__header">
+                            Авторизация
+                        </Typography>
+                        <form className="signin__form" noValidate className="signin__form">
+                            <FormControl className="signin__control">
+                                <InputLabel shrink htmlFor="bootstrap-control" className="signin__input-label">
+                                    Логин
+                                </InputLabel>
+                                <BootstrapInput id="bootstrap-input" className="signin__input" onChange={this.changeEmail}/>
+                            </FormControl>
+                            <FormControl className="signin__control">
+                                <InputLabel shrink htmlFor="bootstrap-input" className="signin__input-label">
+                                    Пароль
+                                </InputLabel>
+                                <BootstrapInput id="bootstrap-input" className="signin__input" onChange={this.changePass}/>
+                            </FormControl>
+                            <Button
+                                type="submit"
+                                fullWidth
+                                variant="contained"
+                                color="primary"
+                                className="signin__submit"
+                                onClick={this.signInBtn}
+                            >
+                                Войти
+                            </Button>
+                            <Grid container>
+                                <Grid item xs>
+                                </Grid>
+                                <Grid item>
+                                    <Link href="/signup" variant="body2">
+                                        {"Зарегистрироваться"}
+                                    </Link>
+                                </Grid>
                             </Grid>
-                            <Grid item>
-                                <Link href="/signup" variant="body2">
-                                    {"Зарегистрироваться"}
-                                </Link>
-                            </Grid>
-                        </Grid>
-                    </form>
-                </div>
+                        </form>
+                    </div>
+                </Grid>
             </Grid>
-        </Grid>
-    );
+        );
+    }
+
+    changeEmail = (event) => {
+        this.setState({
+            email: event.target.value
+        });
+    };
+
+    changePass = (event) => {
+        this.setState({
+            pass: event.target.value
+        });
+    };
+
+    signInBtn = (event) => {
+        event.preventDefault();
+        this.props.authAction({
+            Email: this.state.email,
+            Pass: this.state.pass
+        });
+        this.setState({
+            email: "",
+            pass: "",
+            toMain: true
+        })
+    }
 }
+
+export default connect(
+    null,
+    {
+        authAction: authAction
+    }
+)(SignIn);

@@ -1,18 +1,19 @@
 import axios from "axios"
 
 export default store => next => action => {
+    console.log(action);
+
     if (action.request) {
-        const instance = axios.create({
+        axios({
             url: action.url,
-            baseURL: 'http://localhost:3000/api/',
+            //baseURL: 'http://localhost:8080/api/',
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Token " + store.getState().session.token
             },
             method: action.method,
-        });
-
-        axios(instance)
+            data: action.payload.data
+        })
             .then((response) => {
                 const endAction = {
                     type: action.type + '_END',

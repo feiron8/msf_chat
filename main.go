@@ -12,8 +12,7 @@ func main() {
 	models.InitDB("mongodb://127.0.0.1:27017")
 	r := mux.NewRouter()
 
-	r.Handle("/", http.FileServer(http.Dir("./client/build")))
-
+	//r.Handle("/", http.FileServer(http.Dir("./client/build")))
 	r.HandleFunc("/api/signup", controllers.SignUp).Methods("POST")
 	r.HandleFunc("/api/signin", controllers.SignIn).Methods("POST")
 
