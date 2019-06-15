@@ -17,7 +17,6 @@ func GetUserProjects(w http.ResponseWriter, r *http.Request) {
 func GetUsers(w http.ResponseWriter, r *http.Request) {
 	var users []models.User
 	users = append(users, models.User{
-		Id: "1",
 		Email: "feiron8",
 		Pass: "123",
 		Name: "Rodion",

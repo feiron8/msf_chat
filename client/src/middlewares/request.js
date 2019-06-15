@@ -6,7 +6,6 @@ export default store => next => action => {
     if (action.request) {
         axios({
             url: action.url,
-            //baseURL: 'http://localhost:8080/api/',
             headers: {
                 "Content-Type": "application/json",
                 "Authorization": "Token " + store.getState().session.token

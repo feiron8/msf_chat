@@ -27,12 +27,17 @@ func SignIn(w http.ResponseWriter, r *http.Request) {
 		log.Fatal(err)
 	}
 
-	isExist := models.CheckUser(user)
+	isExist, userId := models.CheckUser(user)
 
 	w.Header().Set("Content-Type", "application/json")
 	if isExist {
-		fmt.Fprintf(w, "{\"isExist\": true}")
+		token := models.SetToken(userId)
+		fmt.Fprintf(w, "{\"isExist\": true, \"token\":\"" + token +  "\", \"userId\": \"" + userId +"\"}")
 	} else {
 		fmt.Fprintf(w, "{\"isExist\": false}")
 	}
+}
+
+func Test(w http.ResponseWriter, r *http.Request) {
+	fmt.Fprintf(w, "hello")
 }

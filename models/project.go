@@ -5,3 +5,5 @@ type Project struct {
 	Title string
 	Description string
 }
+
+var ProjectCollection = "projects"

@@ -4,45 +4,42 @@ import (
 	"context"
 	"fmt"
 	"go.mongodb.org/mongo-driver/bson"
+	"go.mongodb.org/mongo-driver/bson/primitive"
 	"go.mongodb.org/mongo-driver/mongo/options"
-	"log"
 	"golang.org/x/crypto/bcrypt"
+	"log"
 )
 
 type User struct {
-	Id string
-	Email string
-	Pass string
-	Name string
-	Lastname string
+	Id primitive.ObjectID `bson:"_id"`
+	Email string `bson:"email"`
+	Pass string `bson:"pass"`
+	Name string `bson:"name"`
+	Lastname string `bson:"lastname"`
 }
 
-var usersCollection = "users"
-var projectCollection = "projects"
+var UsersCollection = "users"
 
-func CheckUser(user User) bool {
+func CheckUser(user User) (bool, string) {
 	var result User
 
-	collection := Client.Database(Database).Collection(usersCollection)
+	collection := Client.Database(Database).Collection(UsersCollection)
 	filter := bson.D{{"email", user.Email}}
 	err := collection.FindOne(context.TODO(), filter).Decode(&result)
 
 	err = bcrypt.CompareHashAndPassword([]byte(result.Pass), []byte(user.Pass))
 	if err != nil {
-		return false
+		return false, ""
 	}
-
-	if user.Email == result.Email {
-		return true
-	}
-	return false
+	return true, result.Id.Hex();
 }
 
 func AddUser(user User) {
 	bytes, _ := bcrypt.GenerateFromPassword([]byte(user.Pass), 14)
 	user.Pass = string(bytes);
+	user.Id = primitive.NewObjectID()
 
-	collection := Client.Database(Database).Collection(usersCollection)
+	collection := Client.Database(Database).Collection(UsersCollection)
 
 	insertResult, err := collection.InsertOne(context.TODO(), user)
 	if err != nil {
@@ -82,7 +79,7 @@ func GetUsers() []*User {
 }
 
 func GetUserProjects() []*Project {
-	collection := Client.Database(Database).Collection(projectCollection)
+	collection := Client.Database(Database).Collection(ProjectCollection)
 	var results []*Project
 	cur, err := collection.Find(context.TODO(), bson.D{{}}, options.Find())
 	if err != nil {

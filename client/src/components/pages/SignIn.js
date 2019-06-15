@@ -14,6 +14,7 @@ import FormControl from '@material-ui/core/FormControl';
 import {connect} from "react-redux";
 import {authAction} from "../../ac";
 import {Redirect} from "react-router-dom"
+import {session} from "../../selectors"
 
 const BootstrapInput = withStyles(theme => ({
     root: {
@@ -53,12 +54,11 @@ const BootstrapInput = withStyles(theme => ({
 class SignIn extends React.Component {
     state = {
         email: "",
-        pass: "",
-        toMain: false
+        pass: ""
     };
 
     render() {
-        if (this.state.toMain === true) {
+        if (this.props.session.get('isAuthenticated')) {
             return <Redirect to='/' />
         }
 
@@ -87,7 +87,7 @@ class SignIn extends React.Component {
                                 <InputLabel shrink htmlFor="bootstrap-input" className="signin__input-label">
                                     Пароль
                                 </InputLabel>
-                                <BootstrapInput id="bootstrap-input" className="signin__input" onChange={this.changePass}/>
+                                <BootstrapInput id="bootstrap-input" type="password" className="signin__input" onChange={this.changePass}/>
                             </FormControl>
                             <Button
                                 type="submit"
@@ -142,7 +142,9 @@ class SignIn extends React.Component {
 }
 
 export default connect(
-    null,
+    (storeState) => ({
+        session: session(storeState)
+    }),
     {
         authAction: authAction
     }
