@@ -34,17 +34,11 @@ func RemoveUserFromChat(w http.ResponseWriter, r *http.Request) {
 	fmt.Fprintf(w, "RemoveUserFromChat")
 }
 
-func GetMessages(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	fmt.Println(vars["chat"])
-	fmt.Fprintf(w, "GetMessages")
-}
-
-func AddMessage(w http.ResponseWriter, r *http.Request) {
-	vars := mux.Vars(r)
-	fmt.Println(vars["chat"])
-	fmt.Fprintf(w, "AddMessage")
-}
+//func AddMessage(w http.ResponseWriter, r *http.Request) {
+//	vars := mux.Vars(r)
+//	fmt.Println(vars["chat"])
+//	fmt.Fprintf(w, "AddMessage")
+//}
 
 func UpdateMessage(w http.ResponseWriter, r *http.Request) {
 	vars := mux.Vars(r)

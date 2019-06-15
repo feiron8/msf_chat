@@ -4,12 +4,10 @@ import Typography from '@material-ui/core/Typography';
 
 class Message extends React.Component {
   render() {
-    const {text} = this.props.message;
-
     return (
       <Paper>
           <Typography component="p">
-            {text}
+            {this.props.Text}
           </Typography>
       </Paper>
     );

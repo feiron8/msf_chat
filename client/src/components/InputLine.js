@@ -10,6 +10,8 @@ class InputLine extends React.Component {
   };
 
   render() {
+    console.log('render');
+
     return (
       <form noValidate autoComplete="off">
         <TextField
@@ -33,12 +35,18 @@ class InputLine extends React.Component {
   };
 
   handleClick = event => {
-    this.props.sendMessageAction(this.state.text);
+    event.preventDefault();
+    console.log(this.props.session);
+    console.log(this.props.currentProject);
+    this.props.sendMessage(this.props.currentProject.get('currentProject'), this.props.session.get('userId'), this.state.text);
   }
 }
 
 const mapDispatchToProps = {
-  sendMessageAction
+  sendMessage: sendMessageAction
 };
 
-export default connect(null, mapDispatchToProps)(InputLine)
+export default connect((storeState) => ({
+  session: storeState.session,
+  currentProject: storeState.currentProject
+}), mapDispatchToProps)(InputLine)

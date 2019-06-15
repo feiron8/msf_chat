@@ -9,7 +9,7 @@ import (
 )
 
 func GetUserProjects(w http.ResponseWriter, r *http.Request) {
-	projects := models.GetUserProjects()
+	projects := models.GetUserProjects(UserId)
 	json.NewEncoder(w).Encode(projects)
 }
 

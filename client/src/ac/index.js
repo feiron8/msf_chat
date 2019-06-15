@@ -1,16 +1,4 @@
-import {SEND_MESSAGE, SIGN_UP, SIGN_IN, ADD_PROJECT, INIT_PROJECT} from '../constants'
-
-export function sendMessageAction(text) {
-  return {
-    type: SEND_MESSAGE,
-    payload: {
-      message: {
-        id: Math.random(),
-        text: text
-      }
-    }
-  }
-}
+import {SEND_MESSAGE, SIGN_UP, SIGN_IN, ADD_PROJECT, INIT_PROJECT, CHANGE_PROJECT, INIT_MESSAGES} from '../constants'
 
 export function registerAction(user) {
   return {
@@ -48,16 +36,55 @@ export function addProjectAction(project) {
   }
 }
 
-export function initProjectAction() {
+export function initProjectAction(userId) {
   return {
     type: INIT_PROJECT,
     request: true,
     payload: {
       data: {
-        userId: "userId"
+        userId: userId
       }
     },
-    url: "/api/users/userId/projects",
+    url: "/api/users/" + userId + "/projects",
     method: "get"
+  }
+}
+
+export function changeProjectAction(projectId) {
+  return {
+    type: CHANGE_PROJECT,
+    payload: {
+      currentProject: projectId
+    }
+  }
+}
+
+export function initMessagesAction(projectId) {
+  return {
+    type: INIT_MESSAGES,
+    request: true,
+    payload: {
+      data: {
+        projectId: projectId
+      }
+    },
+    url: "/api/projects/" + projectId + "/messages",
+    method: "get"
+  }
+}
+
+export function sendMessageAction(projectId, userId, text) {
+  return {
+    type: SEND_MESSAGE,
+    request: true,
+    payload: {
+      data: {
+        ProjectId: projectId,
+        AuthorId: userId,
+        Text: text
+      }
+    },
+    url: "/api/projects/" + projectId + "/messages",
+    method: "post"
   }
 }

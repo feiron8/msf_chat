@@ -8,7 +8,7 @@ export default store => next => action => {
             url: action.url,
             headers: {
                 "Content-Type": "application/json",
-                "Authorization": "Token " + store.getState().session.token
+                "Authorization": "Token " + store.getState().session.get('token')
             },
             method: action.method,
             data: action.payload.data

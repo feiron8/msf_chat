@@ -12,6 +12,8 @@ var freeURL = map[string]bool {
 	"/api/signin": true,
 }
 
+var UserId = ""
+
 func CheckToken(next http.Handler) http.Handler {
 	return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		token := r.Header.Get("Authorization")
@@ -30,7 +32,8 @@ func CheckToken(next http.Handler) http.Handler {
 			return
 		}
 
-		if isExist, _ := models.CheckToken(tokenArr[1]); isExist {
+		if isExist, currentUserId := models.CheckToken(tokenArr[1]); isExist {
+			UserId = currentUserId
 			next.ServeHTTP(w, r)
 		} else {
 			http.Error(w, "Token Not Found", http.StatusForbidden)

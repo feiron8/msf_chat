@@ -1,4 +1,4 @@
-import {SEND_MESSAGE, EDIT_MESSAGE} from '../constants'
+import {SEND_MESSAGE, INIT_MESSAGES} from '../constants'
 
 const messages = [
   {id: 5, text: 'Сообщение 1'},
@@ -10,11 +10,11 @@ export default (messagesState = messages, action) => {
   const {type, payload} = action;
 
   switch (type) {
-    case SEND_MESSAGE: {
-      return messagesState.concat(action.payload.message);
+    case SEND_MESSAGE+"_END": {
+      return payload.response.data;
     }
-    case EDIT_MESSAGE: {
-      return messagesState;
+    case INIT_MESSAGES+"_END": {
+      return payload.response.data;
     }
   }
 

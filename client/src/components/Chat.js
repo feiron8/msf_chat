@@ -4,7 +4,7 @@ import MessageList from "./MessageList";
 import {Input,Button} from "react-chat-elements";
 import {connect} from 'react-redux';
 import "./Chat.css"
-import {sendMessageAction} from "../ac";
+import {initMessagesAction, sendMessageAction} from "../ac";
 
 class Chat extends React.Component {
     state = {
@@ -40,18 +40,20 @@ class Chat extends React.Component {
 
     sendMessage = (event) => {
         if(this.state.message === "") return;
-        this.props.sendMessageAction(this.state.message);
+        this.props.sendMessage(this.props.currentProject.get('currentProject'), this.props.session.get('userId'), this.state.message);
+        this.props.initMessages(this.props.currentProject.get('currentProject'));
         this.setState({message: ""});
         this.refs.input.clear();
     };
 }
 
-const mapStateToProps = (storeState) => ({
-    messages: storeState.messages
-});
-
 const mapDispatchToProps = {
-    sendMessageAction: sendMessageAction
+    sendMessage: sendMessageAction,
+    initMessages: initMessagesAction
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(Chat)
+export default connect((storeState) => ({
+    session: storeState.session,
+    currentProject: storeState.currentProject,
+    messages: storeState.messages
+}), mapDispatchToProps)(Chat)

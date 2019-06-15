@@ -21,8 +21,9 @@ import ProjectsList from "../ProjectsList";
 class AppSide extends React.Component {
     state = {
         left: false,
-        Name: "",
-        Description: ""
+        Title: "",
+        Description: "",
+        open: false
     };
 
     render() {
@@ -41,24 +42,29 @@ class AppSide extends React.Component {
                         </Typography>
                     </div>
                     <ProjectsList/>
-                    <SimpleModal addProject={this.onAddProject} name={this.state.Name} description={this.state.Description} changeName={this.changeName} changeDescription={this.changeDescription}/>
+                    <SimpleModal open={this.state.open} onClose={this.closeModal} addProject={this.onAddProject} name={this.state.Name} description={this.state.Description} changeName={this.changeName} changeDescription={this.changeDescription}/>
                 </div>
             </React.Fragment>
         )
     }
 
     changeName = (event) => {
-        this.setState({Name: event.target.value});
+        this.setState({Title: event.target.value});
     };
 
     changeDescription = (event) => {
         this.setState({Description: event.target.value});
     };
 
+    closeModal = (event) => {
+        this.setState({open: false});
+    };
+
     onAddProject = (event) => {
         event.preventDefault();
+        this.setState({open: false});
         this.props.addProject({
-            Name: this.state.Name,
+            Title: this.state.Title,
             Description: this.state.Description
         });
     };

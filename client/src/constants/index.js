@@ -3,6 +3,7 @@ Messages
  */
 export const SEND_MESSAGE = 'SEND_MESSAGE';
 export const EDIT_MESSAGE = 'EDIT_MESSAGE';
+export const INIT_MESSAGES = 'INIT_MESSAGES';
 
 /*
 Documents
@@ -24,3 +25,4 @@ Projects
 export const ADD_PROJECT = 'ADD_PROJECT';
 export const REMOVE_PROJECT = 'REMOVE_PROJECT';
 export const INIT_PROJECT = 'INIT_PROJECT';
+export const CHANGE_PROJECT = 'CHANGE_PROJECT';

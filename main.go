@@ -23,7 +23,7 @@ func main() {
 	//r.HandleFunc("/api/users/{user}", controllers.UpdateUser).Methods("PUT")
 	//r.HandleFunc("/api/users/{user}", controllers.RemoveUser).Methods("DELETE")
 	//r.HandleFunc("/api/users/{user}/chats", controllers.GetUserChats).Methods("GET")
-	//r.HandleFunc("/api/users/{user}/projects", controllers.GetUserProjects).Methods("GET")
+	r.HandleFunc("/api/users/{user}/projects", controllers.GetUserProjects).Methods("GET")
 
 	//r.HandleFunc("/api/chats", controllers.AddChat).Methods("POST")
 	//r.HandleFunc("/api/chats/{chat}", controllers.GetChat).Methods("GET")
@@ -39,6 +39,8 @@ func main() {
 	//r.HandleFunc("/api/projects/{project}", controllers.GetProject).Methods("GET")
 	//r.HandleFunc("/api/projects/{project}", controllers.UpdateProject).Methods("PUT")
 	//r.HandleFunc("/api/projects/{project}", controllers.DeleteProject).Methods("DELETE")
+	r.HandleFunc("/api/projects/{project}/messages", controllers.AddMessage).Methods("POST")
+	r.HandleFunc("/api/projects/{project}/messages", controllers.GetMessages).Methods("GET")
 	//r.HandleFunc("/api/projects/{project}/users", controllers.GetProjectUsers).Methods("GET")
 	//r.HandleFunc("/api/projects/{project}/users", controllers.AddUserToProject).Methods("POST")
 	//r.HandleFunc("/api/projects/{project}/users/{user}", controllers.RemoveUserFromProject).Methods("DELETE")

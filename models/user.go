@@ -78,10 +78,12 @@ func GetUsers() []*User {
 	return results
 }
 
-func GetUserProjects() []*Project {
+func GetUserProjects(userId string) []*Project {
 	collection := Client.Database(Database).Collection(ProjectCollection)
 	var results []*Project
-	cur, err := collection.Find(context.TODO(), bson.D{{}}, options.Find())
+
+	filter := bson.D{{"users",bson.D{{"$all", bson.A{userId}}}}}
+	cur, err := collection.Find(context.TODO(), filter, options.Find())
 	if err != nil {
 		log.Fatal(err)
 	}
